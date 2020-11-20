@@ -1,12 +1,13 @@
 \ Example 1.1
 \ Write ABC characters to Mode 7 screen
+\ Using BeebASM assembler
 
 oswrch = &FFEE
 
 ORG &2000
 
 .start
-    LDA #22
+    LDA #22     \ Change to Mode 7
     JSR oswrch
     LDA #7
     JSR oswrch
