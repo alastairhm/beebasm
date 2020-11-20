@@ -12,7 +12,7 @@ ORG &2000
     JSR screenmode
     LDA #65         \ ASCII for 'A'
     LDX #66         \ ASCII for 'B'
-    LDY #67         \ ASCII for 'C
+    LDY #67         \ ASCII for 'C'
     STA screen
     STX screen+1
     STY screen+2
