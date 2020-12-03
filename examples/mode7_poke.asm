@@ -6,7 +6,6 @@
 oswrch = &FFEE
 screen = &7C00
 addr = &70
-ax = &80
 ay = &81
 
 ORG &2000
