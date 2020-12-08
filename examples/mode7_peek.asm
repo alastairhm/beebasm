@@ -28,6 +28,19 @@ ORG &2000
     JSR mode7_poke
     DEX
     BPL loop2
+    LDX #0
+    LDY #0
+    JSR tab
+    LDX #20
+    LDY #12
+    JSR mode7_peek
+    JSR printhex
+    LDX #0
+    LDY #1
+    JSR tab
+    LDX #19
+    LDY #19
+    JSR printhex
 
 .finish
     RTS
@@ -35,6 +48,10 @@ ORG &2000
     INCLUDE "../lib/screenmode.asm"
 .putchar
     INCLUDE "../lib/m7pp.asm"
+.printhex
+    INCLUDE "../lib/printhex.asm"
+.tab
+    INCLUDE "../lib/tab.asm"
 .end
 
 SAVE "MyCode", start, end
