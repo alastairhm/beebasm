@@ -2,11 +2,10 @@
 \ Using BeebASM assembler
 \ Alastair Montgomery
 
-oswrch = &FFEE
+INCLUDE "../lib/constants.asm"
 screen = &7C00
-addr = &70
-seed = &80
-bitmask = &82
+seed = &70
+bitmask = &72
 
 ORG &2000
 
