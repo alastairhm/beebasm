@@ -1,5 +1,6 @@
 \ Write and read character from Mode 7 Screen
-\ Alastair Montgomery
+\ (c) Alastair Montgomery
+\
 
 .mode7_poke
     PHA

@@ -1,3 +1,10 @@
+\
+\ (c) Alastair Montgomery
+\
+\ Print hex value
+\
+\ A contents hex value to be printed
+\
     PHA
     LSR A
     LSR A
