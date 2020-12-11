@@ -4,3 +4,5 @@ build:
 clean:
 			rm -f ${CODE}.ssd
 
+cleanall:
+			rm -f *.ssd

@@ -19,6 +19,7 @@ ORG &2000
     STA seed+1
     LDA #1
     STA bitmask
+    LDX #0
 .char
     LDA chartable, X
     JSR oswrch

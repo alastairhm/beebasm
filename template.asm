@@ -1,8 +1,7 @@
 \ Example
 
 INCLUDE "../../lib/constants.asm"
-screen = &7E40
-model  = 7
+mode  = 7
 
 ORG &2000
 
